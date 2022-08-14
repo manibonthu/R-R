@@ -1,0 +1,14 @@
+
+<mat-card>
+    <mat-card-title>Work Anniversary Events</mat-card-title>
+   <div  fxLayout="column" fxLayoutAlign="space-between center" *ngFor="let member of members" fxLayoutGap="20px">
+    <mat-card fxFlex="100" class="example-card" >
+        <mat-card-title-group>
+          <mat-card-title>{{member.name}}</mat-card-title>
+          <mat-card-subtitle>Small</mat-card-subtitle>
+          <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+        </mat-card-title-group>
+      </mat-card>
+   </div>
+  
+  </mat-card>

@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>My App </span>
+    <div *ngIf="user$ | async; let user">
+      <span>
+        {{ user.firstName }}
+      </span>
+    </div>
+
+    <span class="example-spacer"></span>
+    <button mat-button *ngFor="let item of menuItems" [routerLink]="item.route">
+      <mat-icon class="mr">{{ item.icon }}</mat-icon>
+      {{ item.label }}
+    </button>
+  </mat-toolbar-row>
+  </mat-toolbar>
